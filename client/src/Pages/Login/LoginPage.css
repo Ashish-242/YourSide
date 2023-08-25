@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+form.login , form.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    /* max-width: 400px; */
+    /* border: 2px solid black; */
+    margin-top: 100px;
+}
+form.login h1 , form.register  h1{
+    align-self: center;
+    /* color: rgb(189, 123, 123); */
+}
+
+form.login input, form.register input{
+    display: block;
+    padding: 4px 6px;
+    margin-bottom:15px;
+    border: 1px solid black;
+    width: 70%;
+    
+    border-style:inset;
+    font-size: 1rem;
+    background-color:rgb(216, 224, 216);
+    
+    
+}
+.ql-snow .ql-editor img {
+    /* max-width: 100%; */
+    width: 100%;
+}
+
+ 
+input:focus {
+    background-color: #c2c2ad57;
+  }
+  form.login button,form.register button{
+    width: 70%;
+    border:1px solid black;
+    background-color: rgb(170, 139, 139) !important;
+    
+}
+button:hover{
+    color:white;
+}
+ 

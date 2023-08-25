@@ -1,0 +1,55 @@
+Routes kaise hota h website pr wo sikha jaise agr login pr jana h ot '/login' krenge ek route mei rkh kr route just ek rasta h kilogin pr jayenge to url mei kya aana chahiye 
+
+<!-- <Route path={'/login'} element={<Login/>} -->
+to ye just ek login ka path h or jaha pr login ka button bta h waha pr aise krna h 
+<!-- <link to ="'/login">login</link>  -->
+to yaha pr humne url de diya ki agr login pr click ho to is link pr jao or us link pr jo page dalna h wo humne route ki help se daal diya 
+
+after that we made login and register page 
+in register page we add method post to send data to server
+
+in api we created index.js 
+in which express and other libraries installed 
+BZWPfKUFwD6gxZwr password for mongodb
+
+mongodb+srv://ash242242:<BZWPfKUFwD6gxZwr>@cluster0.5v4v8rn.mongodb.net/?retryWrites=true&w=majority
+connectionstring
+
+
+
+CONNECT WITH BACKEND  {
+    
+so basically first we made a new project on mongo db after then we choose free stroage sectin fro our project
+after that we click on connect and then we choose OPEN WITH APPLICATIONf feature and copy the connectin string 
+after that we need to have model to know in which form our data should be present 
+after that we create a user.js file in which we created a userschema which ell in which form our data will remains 
+after that we make a usermodel and connect it with the usermodel
+}
+
+
+Register{
+
+    we have created a user in post method of index.js at /register  and passed username and password 
+    so through it when a person click on register 
+    then data will go to method post and passed into the usermodel and a usermodel data has been created in the database
+
+
+
+    in the register page if somehow data is wrong present in emal and password then response will  not give status code of 400 so we imlement a alert request that registration is successful or not
+}
+
+
+
+Login{
+    same fetch request as register 
+    and in index.js first i find the user from User.findOne and then compare the password usign bcrypt.comparesync if 
+    the password is correct then we gernrate a jwt token for our cookie in which we pass username,secretkey, and  a callback function 
+    then we create acookei by res.cookie('token',token) and name he cookie token 
+    after then in login.jsx we take the response and check that the response.ok it rue or not 
+    if it is true then we say that login successful and then we navigate the page to our main page by using navigator
+    and by the use of usestate redirect 
+}
+
+{
+    after login login and register should disappear but how?
+}
