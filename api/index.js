@@ -17,6 +17,10 @@ const fs=require('fs');
 const { useParams } = require('react-router-dom');
 
 const app=express();
+const Port=process.env.PORT ||4000;
+app.listen(Port,()=>{
+    console.log(`server is working on http://localhost:${Port}`);
+})
 // we are using cors because by directly accessing data there are cors erros
 const secret='lksfjaijfowjpoerjwfnaksfdaf';
 
@@ -55,7 +59,6 @@ app.post('/register',async(req,res)=>{
     }
    
 })
-app.listen(4000);
 
 app.post('/login',async(req,res)=>{
     try{
